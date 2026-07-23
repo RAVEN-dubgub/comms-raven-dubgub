@@ -1,12 +1,12 @@
-# Cohort Comms Platform — RAVEN-dubgub
+﻿# Cohort Comms Platform â€” RAVEN-dubgub
 
-Hult Cohort Developer Program · **Project 2 · Internal communications platform**.
+Hult Cohort Developer Program Â· **Project 2 Â· Internal communications platform**.
 
-**Purpose:** replace Discord as the cohort's primary channel — public channels, 1:1 DMs, announcements, in-app notifications, search, and PM deep links.
+**Purpose:** replace Discord as the cohort's primary channel â€” public channels, 1:1 DMs, announcements, in-app notifications, search, and PM deep links.
 
 ## Production URL
 
-_Pending first deploy — set after Vercel + Neon are wired._
+_Pending first deploy â€” set after Vercel + Neon are wired._
 
 ## Quick start
 
@@ -19,7 +19,7 @@ npm run db:seed
 npm run dev
 ```
 
-Open http://localhost:3000 → **Sign up with the same email as the PM platform**.
+Open http://localhost:3000 â†’ **Sign up with the same email as the PM platform**.
 
 ### Seed admin (announcements posting)
 
@@ -35,7 +35,7 @@ npm run db:seed
 
 | Requirement | Status |
 |-------------|--------|
-| ≥3 public channels (general, announcements, reviews) | Yes — seeded |
+| â‰¥3 public channels (general, announcements, reviews) | Yes â€” seeded |
 | Create / rename / archive channels | Create + archive/rename via API |
 | 1:1 DMs | Yes |
 | Message persistence | Postgres |
@@ -50,12 +50,12 @@ npm run db:seed
 
 ```
 Browser (Next.js App Router)
-  → API routes (/api/auth, /api/channels, /api/dms, /api/search, /api/notifications)
-  → Prisma ORM
-  → PostgreSQL (Neon)
+  â†’ API routes (/api/auth, /api/channels, /api/dms, /api/search, /api/notifications)
+  â†’ Prisma ORM
+  â†’ PostgreSQL (Neon)
 ```
 
-Polling ≤ 4s for new messages (MVP real-time without websockets).
+Polling â‰¤ 4s for new messages (MVP real-time without websockets).
 
 ## PM platform integration
 
@@ -69,9 +69,10 @@ Scaffolded and implemented with Cursor agent from Project 1 patterns (JWT auth, 
 
 ## Grader smoke test
 
-1. Sign up with PM email → land in `/app`
+1. Sign up with PM email â†’ land in `/app`
 2. See `#general`, `#announcements`, `#reviews`
 3. Post in `#general`
 4. Open DM with another user
 5. Search a keyword
 6. As admin, post in `#announcements`; as member, confirm blocked
+
