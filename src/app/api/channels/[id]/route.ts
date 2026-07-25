@@ -28,9 +28,9 @@ export async function PATCH(request: Request, { params }: Params) {
     return NextResponse.json({ error: "Not found" }, { status: 404 });
   }
 
-  if (channel.kind === "ANNOUNCEMENTS" && user.role !== "ADMIN") {
+  if (user.role !== "ADMIN") {
     return NextResponse.json(
-      { error: "Only admins can rename or archive announcements" },
+      { error: "Only admins can rename or archive channels" },
       { status: 403 },
     );
   }
