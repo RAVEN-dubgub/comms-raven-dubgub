@@ -69,6 +69,8 @@ Scaffolded and implemented with Cursor agent from Project 1 patterns (JWT auth, 
 
 ## Grader smoke test
 
+**Peer reviewers:** see [docs/REVIEWER.md](./docs/REVIEWER.md) for demo access and a 5-minute checklist.
+
 1. Sign up with PM email â†’ land in `/app`
 2. See `#general`, `#announcements`, `#reviews`
 3. Post in `#general`
